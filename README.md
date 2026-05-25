@@ -31,7 +31,4 @@ The automation framework is offloaded directly to the system initialization laye
 To prove the telemetry loop worked seamlessly across platforms, I simulated a real-world brute-force attack from my Windows workstation using a native PowerShell loop to hammer the VM's SSH daemon:
 
 ```powershell
-1..5 | ForEach-Object { ssh admin@192.168.68.237 }````
-
-
-### 
+1..5 | ForEach-Object { ssh admin@192.168.68.237 }
