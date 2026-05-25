@@ -1,0 +1,16 @@
+[Unit]
+Description=Bastion Guard Authentication Telemetry Daemon
+After=network.target sshd.service
+
+[Service]
+Type=simple
+User=root
+# Force systemd to load our secure variables into environment memory
+EnvironmentFile=/etc/bastion/alerts.env
+# Run the script (Make sure to point to the exact path where your script lives)
+ExecStart=/usr/local/bin/harden_and_monitor.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
