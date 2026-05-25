@@ -36,7 +36,7 @@ To prove the telemetry loop worked seamlessly across platforms, I simulated a re
 
 The result? The VM caught the automated probe, calculated that 5 failed attempts within the 60-second window, and instantly fired an alert straight to my phone. Mission accomplished.
 
-⚙️ Tech Stack Stacked Deep
+## ⚙️ Tech Stack Stacked Deep
 
 Core Language: Bash / Linux Shell Scripting
 Log Aggregation: systemd-journald & journalctl
