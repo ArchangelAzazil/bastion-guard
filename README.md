@@ -32,14 +32,3 @@ To prove the telemetry loop worked seamlessly across platforms, I simulated a re
 
 ```powershell
 1..5 | ForEach-Object { ssh admin@192.168.68.237 }
-
-
-The result? The VM caught the automated probe, calculated that 5 failed attempts within the 60-second window, and instantly fired an alert straight to my phone. Mission accomplished.
-
-## ⚙️ Tech Stack Stacked Deep
-
-Core Language: Bash / Linux Shell Scripting
-Log Aggregation: systemd-journald & journalctl
-Network Tuning: Linux Kernel Namespace (sysctl)
-API Gateways: Telegram Bot API via curl HTTPS POST
-Hypervisor: Microsoft Hyper-V
